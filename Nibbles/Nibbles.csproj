@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\Images\background.jpg" />
+    <None Remove="Resources\Images\logo.gif" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Helpers\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="PropertyChanged.Fody" Version="3.4.0" />
+    <PackageReference Include="WpfAnimatedGif" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\Images\background.jpg" />
+    <Resource Include="Resources\Images\logo.gif" />
+  </ItemGroup>
+
+</Project>
